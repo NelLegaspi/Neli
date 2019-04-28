@@ -1,0 +1,353 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+	<title>Rakita Station</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8">
+	<style>
+		body
+{
+	margin: 0;
+	background-color:#e6e6e6;
+	font-family: tahoma;
+}
+/* rakista radio logo */
+img.logo
+{
+	margin: 10px 0 10px 30px;
+	cursor: pointer;
+}
+/* navigation */
+.navigation
+{
+	width: 100%;
+	height: 70px;
+	background: linear-gradient(180deg, #000000, #404040);
+	margin-bottom: 10px;
+	position: fixed;
+	clear: both;
+	z-index: 50;
+}
+
+nav a
+{
+	display: inline;
+	text-decoration: none;
+	color: white;
+	padding: 0 30px;
+	letter-spacing: 0.05em;
+}
+/* makes logo and links inline */
+img nav
+{
+	display: inline-block;
+}
+nav
+{	
+	text-align: right;
+	height: 80%;
+	width: 80%;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+.main
+{
+	position: relative;
+	top: 90px;
+	width: 90%;
+	margin: 0 auto;
+}
+/* header section */
+.head
+{
+	width: 100%;
+}
+.slides
+{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+.head .slides img
+{
+	width: 100%;
+	max-height: 480px;
+	display: none;
+}
+.head .slides img.slideshow
+{
+	position: absolute;
+	top: -0px;
+	width: 100%;
+}
+
+aside
+{
+	width: 95%;
+	margin: 0 auto;
+	font-family: tahoma;
+	position: relative;
+}
+aside p
+{
+	line-height: 25px;
+	text-align: justify;
+	background-color: white;
+	box-sizing: border-box;
+	margin-top: -3%;
+	padding: 40px 10px 30px 10px;
+	position: relative;
+	text-indent: 50px;
+}
+aside h1
+{
+	width: 45%;
+	margin: -2% 0 0 -5%;
+	background-color: #808080;
+	box-sizing: border-box;
+	padding: 10px;
+	color: white;
+	font-size: 250%;
+	z-index: 8;
+	position: relative;
+}
+/* end of the head section */
+
+.content
+{
+	position: relative;
+	top: 100px;
+	width: 90%;
+	margin: 0 auto;
+}
+.content h3
+{
+	width: 80%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 10px 0 10px 0;
+	font-size: 180%;
+	color: white;
+	background-color:  #999999;
+	text-align: center;
+	letter-spacing: .1em;
+	box-shadow: 10px 10px #bfbfbf;
+	z-index: 4;
+	position: relative;
+}
+.column
+{
+	width: 32%;
+	float: left;
+	margin-top: 20px;
+	margin-left: 1%;
+	font-size: 14px;
+	height: 450px;
+	line-height: 25px;
+	background-color: white;
+	text-align: center;
+	position: relative;
+}
+
+.column figure
+{
+	width: 100%;
+	margin: 0 auto;
+}
+.column figure img 
+{
+	margin-top: 20px;
+	height: 200px;
+	width: 90%;
+}
+
+.column figure figcaption
+{
+	color: black;
+	text-align: justify;
+	margin: 20px;
+	font-size: 100%;
+	letter-spacing: .05em;
+	word-spacing: 0.05em;
+	text-indent: 20px;
+}
+
+
+@media screen and (max-width: 950px) {
+	nav a
+	{
+		padding: 0 5px;
+		letter-spacing: 0.05em;
+	}
+	
+	aside h1
+	{
+		width: 70%;
+		text-align: center;
+		font-size: 180%;
+	}
+	aside p
+	{
+		padding: 30px 10px 30px 10px; 
+	}
+	
+	.column
+	{
+
+		width: 100%;
+		float: none;
+		height: 400px;
+	}
+
+	.column figure
+	{
+
+		width: 100%;
+		text-align: center;
+	}
+	.column figure img 
+	{
+		width: 60%;
+	}
+	.column figure figcaption
+	{
+		font-size: 120%;
+		letter-spacing: .05em;
+		word-spacing: 0.05em;
+		text-indent: 20px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	
+	aside h1
+	{
+		width: 100%;
+		text-align: center;
+		font-size: 180%;
+		margin: 0 auto;	
+	}
+	aside p
+	{
+		padding: 20px 10px 30px 10px; 
+	}
+	.content h3 
+	{
+		font-size: 80%;
+	}
+	.column figure img 
+	{	
+		width: 40%;
+		height: 100px;
+	}
+	.column figure figcaption
+	{
+		font-size: 90%;
+	}
+	nav 
+	{
+		float: none;
+		width: 100%;
+		margin-top: 0;
+		display: none;
+		transition-duration: 300ms;		
+	}
+	nav a 
+	{
+		display: block;
+		background: linear-gradient(180deg, #000000, #404040);
+		margin: 0 auto;
+		text-align: center;
+		padding: 10px 0 10px 0;
+		transition-duration: 300ms;
+	}
+	.navigation:hover nav
+	{
+		display: block;
+	}
+	img.logo 
+	{
+		position: relative;
+		left: calc(50% - 55px);
+	}
+	.column
+	{
+		height: 350px;
+	}	
+}
+	</style>
+</head>
+<body>
+	<div class="navigation">
+		<img src="Images/rr.png" alt="Rakista Staion" width="50px" height="50px" class="logo" align="center" title="Rakista">
+		<nav>
+			<a href="#" >Home</a>
+			<a href="#">Latest News</a>
+			<a href="#">Merch</a>
+			<a href="#">Features</a>
+			<a href="#">Events</a>
+			<a href="#">Contacts</a>
+		</nav>
+	</div>
+	<div class="main">
+		<div class="head">
+			<header>
+				<div class="slides">
+					<span><img src="Images/KMKZ.jpg" class="show one"></span>
+					<span><img src="Images/KMKZ1.jpg" class="show slideshow"></span>
+					<span><img src="Images/KMKZ2.jpg" class="show slideshow"></span>
+				</div>				
+				</article>
+				<aside>
+					<h1 id="tae">KAMIKAZEE is BACK</h1>
+					<p><b>Kamikazee</b> is a Filipino rock band formed in 2000. The band is composed of Jay Contreras, Jomal Linao, Led Tuyay, Puto Astete and Bords Burdeos. Fans and critics have described the band's music as a mix of pop-punk and hard rock.</p>	
+				</aside>
+			</header> 
+		</div>
+	</div>
+	<div class="content">
+		<h3>Featured Bands</h3>
+		<div class="column">
+			<figure>
+				<img src="Images/TYPCST.jpg">
+				<figcaption>Typecast is an alternative rock band from the Philippines. Originally an underground act, they have surfaced on the mainstream Philippine music scene, while managing to hold on to their underground roots.</figcaption>
+			</figure>
+		</div>
+		<div class="column">
+			<figure>
+				<img src="Images/FRANCO.jpg">
+				<figcaption>Franco is a rock band from the Philippines formed in 2008. The band had its beginnings as a supergroup with members from iconic Filipino bands, consisting of Franco Reyes on vocals, Gabby Alipe on guitar, Paolo Toleran on guitar, Buwi Meneses on bass guitar, and JanJan Mendoza on drums</figcaption>	
+			</figure>
+		</div>
+		<div class="column">
+			<figure>
+				<img src="Images/urbdb.jpg">
+				<figcaption>Urbandub is a rock band from Cebu City, Philippines. Since its inception in 2000, the band's line-up consisted of Gabby Alipe, John Dinopol, Lalay Lim, and JanJan Mendoza who joined in 2003. Urbandub is the first indie band in the Philippines to release albums nationwide with the assistance of a major label.</figcaption>
+			</figure>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var slides = document.querySelectorAll('.show');
+		var count = 0;
+		show();
+		function show() {
+			if(count < slides.length) {
+			slides[count].style.display = 'block';
+			slides[count].style.opacity = 1;
+
+			slides[count].style.transitionDuration = '300ms';
+			count++;	
+			} else {
+				slides[1].style.display ='none';
+				slides[2].style.display ='none';
+				count = 0;
+			}
+			setTimeout(show, 3000);
+		}
+	
+		
+	</script>
+</body>
+</html>
